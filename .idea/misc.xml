@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Remote Python 3.7.13 (sftp://root@hpc.eias.ac.cn:40047/opt/conda/bin/python3)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (pytorch)" project-jdk-type="Python SDK" />
+  <component name="PyPackaging">
+    <option name="earlyReleasesAsUpgrades" value="true" />
+  </component>
+</project>
