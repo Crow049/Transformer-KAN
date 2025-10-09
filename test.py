@@ -22,7 +22,7 @@ from tool_for_pre import get_parameters, create_time_series, normalize_and_load,
 from tool_for_test import plot_results
 
 
-def test_main(args, model_file_path="models_save/Transformer-KAN/国内数据和国外数据的权重.pth"):
+def test_main(args, model_file_path="models_save/Transformer-KAN/"):
     # 读取指定目录下的所有Excel文件
     input_directory = args.input_directory
     input_directory = os.path.join(input_directory, "测试集")
