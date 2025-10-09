@@ -183,5 +183,5 @@ def define_your_model(args):
 
 
 if __name__ == "__main__":
-    args = get_parameters(modelname="TCN", target="RD", input_size=15, output_size=1, batch_size=1024, num_epochs=50, learning_rate=5e-4, input_directory="data_save/5口井新数据")
-    test_main(args, model_file_path="models_save/Transformer_KAN--18--22--48--53/lstm_model_final.pth")
+    args = get_parameters(modelname="", target="RD", input_size=15, output_size=1, batch_size=1024, num_epochs=50, learning_rate=5e-4, input_directory="data_save/")
+    test_main(args, model_file_path="")
