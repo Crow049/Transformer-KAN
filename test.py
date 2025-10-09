@@ -182,27 +182,6 @@ def define_your_model(args):
     return model
 
 
-    """
-    # 根据args.model_name选择不同的模型
-    if args.model_name == 'GRU':
-        model = GRU(input_dim=args.input_size, hidden_dim=args.hidden_size, num_layers=args.num_layers, output_dim=args.output_size)
-    elif args.model_name == 'LSTM':
-        model = LSTM(args.input_size, args.hidden_size, args.num_layers, args.output_size)
-    elif args.model_name == 'BiLSTM':
-        model = BiLSTM(input_dim=args.input_size, hidden_dim=args.hidden_size, num_layers=args.num_layers, output_dim=args.output_size)
-    elif args.model_name == 'TCN':
-        model = TemporalConvNet(num_inputs=args.input_size, num_outputs=args.hidden_size, num_channels=args.num_channels, kernel_size=args.kernel_size, dropout=args.dropout)
-    elif args.model_name == 'Transformer':
-        model = TransformerModel(args.input_size, args.hidden_size, args.num_layers, args.output_size)
-    elif args.model_name == 'Transformer_KAN':
-        model = TimeSeriesTransformer_ekan(input_dim=args.input_size, num_heads=args.num_heads, num_layers=args.num_layers, num_outputs=args.output_size, hidden_space=args.hidden_space, dropout_rate=args.dropout)
-    else:
-        raise ValueError('Please choose a correct model name')
-
-    return model
-    """
-
-
 if __name__ == "__main__":
     args = get_parameters(modelname="TCN", target="RD", input_size=15, output_size=1, batch_size=1024, num_epochs=50, learning_rate=5e-4, input_directory="data_save/5口井新数据")
     test_main(args, model_file_path="models_save/Transformer_KAN--18--22--48--53/lstm_model_final.pth")
