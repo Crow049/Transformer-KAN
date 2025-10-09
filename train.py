@@ -58,7 +58,7 @@ def train(args):
 
 if __name__ == "__main__":
     # 获取参数
-    args = get_parameters(modelname="KAN", target="RD", input_size=15, output_size=1, batch_size=1024, num_epochs=50, learning_rate=5e-4, input_directory="data_save/5口井新数据")
+    args = get_parameters(modelname="KAN", target="RD", input_size=15, output_size=1, batch_size=1024, num_epochs=50, learning_rate=5e-4, input_directory="data_save/")
 
     # 数据预处理（初次运行即可，运行后结果保存到data_save文件夹内），注意数据的第一列是深度会被丢弃
     data_pre_process(args)
