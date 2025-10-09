@@ -185,7 +185,7 @@ args = get_parameters(
     batch_size=1024,
     num_epochs=50,
     learning_rate=5e-4,
-    input_directory="data_save/5口井新数据"
+    input_directory="data_save/"
 )
 
 # Preprocess data
@@ -223,7 +223,7 @@ if __name__ == "__main__":
         batch_size=1024,
         num_epochs=50,
         learning_rate=5e-4,
-        input_directory="data_save/5口井新数据"
+        input_directory="data_save/"
     )
     
     # Data preprocessing
